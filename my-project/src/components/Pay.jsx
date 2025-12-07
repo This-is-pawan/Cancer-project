@@ -1,6 +1,5 @@
-import { FaGooglePay } from "react-icons/fa6";
-import { SiPhonepe } from "react-icons/si";
-import { SiPaytm } from "react-icons/si";
+import { SiGooglepay, SiPhonepe, SiPaytm } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Pay = () => {
   return (
@@ -23,12 +22,13 @@ const Pay = () => {
         </button>
 
         <button className="flex flex-col items-center bg-white shadow-md p-4 rounded-xl hover:shadow-xl transition">
-          <FaGooglePay className="text-5xl text-black" />
+          <SiGooglepay className="text-5xl text-black" />
           <span className="mt-2 font-semibold text-gray-700">Google Pay</span>
         </button>
       </div>
 
-      
+     <button className="text-pretty capitalize pt-9 text-blue-900 underline"><Link to='/'>go back to home</Link></button>
+        
 
     </div>
   );
